@@ -65,21 +65,21 @@
             const years = [...yearsSet]
             const h = 400
             const w = 1300
-            const margin = { top: 120, left: 180, bottom: 60, right: 60 }
+            const margin = { top: 120, left: 120, bottom: 60, right: 60 }
 
             // Head
             const head = d3.select("#root")
                 .append("div")
                 .attr("id", "head")
-                .style("margin-left", `${margin.left - 80}px`)
+                .style("margin-left", `${margin.left}px`)
                 .style("margin-bottom", `${40}px`)
-                .style("margin-top", `${margin.top - 40}px`)
+                .style("margin-top", `${20}px`)
 
                 .style('text-align', 'center')
             head.append("h1")
                 .attr("id", 'title')
                 .text("Monthly Global Land-Surface Temperature")
-                .style('font-size', '30px')
+                .style('font-size', '20px')
 
 
             head.append('h3')
